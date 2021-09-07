@@ -21,7 +21,7 @@ def extract_amount(dirpath: str) -> float:
     # your logic goes here
     with open(dirpath + "/ocr.json","r",encoding='utf-8') as file:
         data = file.read()
-        js = json.loads(data)
+        data = json.loads(data)
     json_text = ''
     for j in range(len(data['Blocks'])):
 
